@@ -14,7 +14,12 @@
 #app-mount::before {
     content: "";
     position: absolute;
-  
+    background: linear-gradient(
+        90deg,
+        rgb(143, 51, 236) 0%,
+        rgb(247, 34, 186) 50%,
+        rgb(250, 107, 107) 100%
+    );
     height: calc(100vh + (var(--background-image-blur) * 2));
     width: calc(100vw + (var(--background-image-blur) * 2));
 }
@@ -91,3 +96,4 @@ body,
 }
 .winButtonMinMax-PBQ2gm:last-child:hover {
     background-color: var(--green4);
+}
